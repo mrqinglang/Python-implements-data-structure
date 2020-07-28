@@ -52,7 +52,6 @@ class SingleLinkList(object):
         :param item: 插入数据
         :return:
         '''
-        count = 0
         if pos <= 0:
             self.add(item)
         else:
