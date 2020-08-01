@@ -5,21 +5,21 @@
 import random
 
 def bubble_sort(num):
-  # 冒泡排序
+    # 冒泡排序
     for i in range(len(num)-1):
-        for j in range(len(num)-i-1):
-            count = 0
-            if int(num[j]) > int(num[j+1]):
+        count = 0
+        for j in range(0, len(num)-i-1):
+            if num[j] > num[j+1]:
                 num[j], num[j+1] = num[j+1], num[j]
                 count += 1
-            if count == 0:
-                # 如果是有序的直接退出时间复杂度变为n
-                return num
+        if count == 0:
+            # 如果是有序的直接退出时间复杂度变为n
+            return num
     return num
 
 def main():
-    #在0到99中随机取10个数
-    num = random.sample(range(100), 10)
+    # 在0到99中随机取10个数
+    num = random.sample(range(10), 10)
     print('排顺前:' + str(num))
     print('排序后:' + str(bubble_sort(num)))
 
