@@ -20,7 +20,7 @@ def bubble_sort(num):
 def main():
     # 在0到99中随机取10个数
     num = random.sample(range(10), 10)
-    print('排顺前:' + str(num))
+    print('排序前:' + str(num))
     print('排序后:' + str(bubble_sort(num)))
 
 if __name__ == '__main__':
