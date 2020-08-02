@@ -12,7 +12,7 @@ def selection_sort(list):
                 min_index = j
         if min_index != i:
             list[min_index], list[i] = list[i], list[min_index]
-        return list
+    return list
 
 def main():
     num = random.sample(range(100), 10)
