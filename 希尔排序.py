@@ -1,23 +1,19 @@
 # --*-- coding: utf-8 --*--
-# @Time     : 2020/8/1 21:10
+# @Time     : 2020/8/6 7:54
 # @Author   : mrqinglang
 # @software : PyCharm
 import random
 
 def shell_sort(list):
     n = len(list)
-    gap = n // 2
+    gap = n//2
     while gap > 0:
-        for j in range(gap, n):
-            i = j
-            while i > 0:
-                if list[i] < list[i-gap]:
-                    list[i], list[i-gap] = list[i-gap], list[i]
-                    i -= gap
+        for i in range(gap, n):
+            for j in range(i, 0, -1):
+                if list[j] < list[j - gap]:
+                    list[j], list[j - gap] = list[j - gap], list[j]
                 else:
                     break
-                print(list)
-        print('--------')
         gap //= 2
 
 
