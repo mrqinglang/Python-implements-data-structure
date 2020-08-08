@@ -18,7 +18,7 @@ def merge_sort(list):
     result = []
 
     while left_pointer < len(left_li) and right_pointer < len(right_li):
-        if left_li[left_pointer] < right_li[right_pointer]:
+        if left_li[left_pointer] <= right_li[right_pointer]:
             result.append(left_li[left_pointer])
             left_pointer += 1
         else:
