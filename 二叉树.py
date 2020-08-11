@@ -65,7 +65,6 @@ class Tree(object):
         print(node.elem, end=' ')
 
 
-
 def main():
     tree = Tree()
     tree.add(1)
