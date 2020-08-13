@@ -41,5 +41,6 @@ def main():
     print(binary_search_2(num, 40))
     print('排序后:' + str(num))
 
+    
 if __name__ == '__main__':
     main()
