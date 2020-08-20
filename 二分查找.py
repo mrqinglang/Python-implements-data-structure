@@ -33,7 +33,6 @@ def binary_search_2(list ,item):
     return False
 
 
-
 def main():
     num = [15, 16, 21, 36, 40, 43, 49, 67, 76, 95]
     print('排顺前:' + str(num))
