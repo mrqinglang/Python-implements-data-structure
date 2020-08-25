@@ -19,6 +19,7 @@ def quick_sort(list, start, end):
         list[low] = base
         print('-------------')
         print(base, list)
+        # 递归
         quick_sort(list, start, low - 1)
         quick_sort(list, low+1, end)
 
