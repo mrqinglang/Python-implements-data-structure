@@ -17,6 +17,7 @@ def binary_search_1(list ,item):
             return binary_search_1(list[mid+1:], item)
     return False
 
+
 def binary_search_2(list ,item):
     '''非递归实现二分查找'''
     n = len(list)
